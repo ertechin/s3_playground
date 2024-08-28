@@ -1,0 +1,5 @@
+<h1>Users#index</h1>
+<% @users.each do |user| %>
+    <%= user.email %><br/>
+    <%= image_tag url_for(user.avatar) if user.avatar.attached? %><br/>
+<% end %>
